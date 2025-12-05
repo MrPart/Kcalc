@@ -23,20 +23,38 @@ while 'да' in z or 'Да' in z or 'ДА' in z or 'дА' in z:
         if n3 == 1:
             print('Напишите делимое')
             c1 = int(input())
+            while c1 == 0:
+                print('Делимое не может быть равно 0, напишите новое делимое')
+                c1 = int(input())
             print('Напишите делитель')
             c2 = int(input())
+            while c2 == 0:
+                print('Ha ноль делить нельзя! Напишите новое делимое')
+                c2 = int(input())
             print('Частное:', c1 / c2)
         elif n3 == 2:
             print('Напишите делимое')
             c1 = int(input())
+            while c1 == 0:
+                print('Делимое не может быть равно 0, напишите новое делимое')
+                c1 = int(input())
             print('Напишите делитель')
             c2 = int(input())
+            while c2 == 0:
+                print('Ha ноль делить нельзя! Напишите новое делимое')
+                c2 = int(input())
             print('Частное:', c1 // c2)
         elif n3 == 3:
             print('Напишите делимое')
             c1 = int(input())
+            while c1 == 0:
+                print('Делимое не может быть равно 0, напишите новое делимое')
+                c1 = int(input())
             print('Напишите делитель')
             c2 = int(input())
+            while c2 == 0:
+                print('Ha ноль делить нельзя! Напишите новое делимое')
+                c2 = int(input())
             print('Остаток:', c1 % c2)
         else:
             print('Такой функции еще нет :[')
@@ -66,7 +84,10 @@ while 'да' in z or 'Да' in z or 'ДА' in z or 'дА' in z:
             res = 1
             for i in range(1, c1 + 1):
                 res = res * i
-            print('Факториал:', res)
+            if c1 < 0:
+                print('Факториал: 0 (факториал меньше 0)')
+            else:
+                print('Факториал:', res)
         else:
             print('Такой функции еще нет :[')
     else:
